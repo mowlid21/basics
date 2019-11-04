@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF5722"
+        tools:context=".MainActivity">
+
+    <Button
+            android:textColor="#8F0E0E"
+            android:text="Press Here"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="24dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+    />
+    <TextView
+            android:textColor="#3F51B5"
+            android:text="The quick brown foxed jumped to over a lazy dog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/button" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/inputName" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:hint="Full Name"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/inputEmail" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/inputName" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:hint="Email Adress"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/inputPhone" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/inputEmail" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:hint="@android:string/emptyPhoneNumber"/>
+    <CheckBox
+            android:text="I agree to terms and contions "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/inputPhone" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"/>
+    <Switch
+            android:text="Change My Status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox"/>
+    <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/switch1">
+        <RadioButton
+                android:text="Male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/radioButton4" android:layout_weight="1"/>
+        <RadioButton
+                android:text="Female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/radioButton3" android:layout_weight="1"/>
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
